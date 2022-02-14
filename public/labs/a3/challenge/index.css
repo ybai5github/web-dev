@@ -290,3 +290,26 @@
 }
 
 
+
+
+
+@media (min-width: 0px) and (max-width: 600px) {
+    body {
+        background-color: purple;
+    }
+    .example3-query {
+        background-color: white;
+        color: mediumpurple;
+    }
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+    body {
+        background-color: brown;
+        color: sandybrown;
+    }
+
+    .example3-query {
+        background-color: rosybrown;
+        color: saddlebrown;
+    }
+}
