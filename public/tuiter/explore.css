@@ -93,3 +93,52 @@
     margin-right: 2px;
 }
 
+.wd-searchbar-border{
+    border-radius: 50px;
+}
+
+.wd-bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.wd-inline-icon-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.wd-padding-input{
+    padding-left: 50px;
+}
+
+.wd-more-tab{
+    position: absolute;
+    width: 100%;
+}
+
+.wd-text-to-bottom{
+    background-image: url('../labs/a4/starship.jpeg');
+
+}
+
+.wd-padding-12{
+    padding-left: 12px;
+}
+
+.wd-bolded-font{
+    font-weight: bold;
+}
+
+.wd-tiny-font{
+    font-size: 15px;
+}
+
+.wd-vertical-align-button{
+    position: absolute;
+    right: .5em;
+    top: 50%;
+    transform: translate(0,-50%);
+}
