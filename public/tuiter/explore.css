@@ -33,6 +33,10 @@
     border-radius: 50px;
 }
 
+.wd-rounded-corners-small{
+    border-radius: 25px;
+}
+
 .wd-padding-all-around{
     padding: 16px 0px;
     margin:0px 16px;
@@ -110,6 +114,12 @@
 
 }
 
+.wd-inline{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
 .wd-padding-input{
     padding-left: 50px;
 }
@@ -174,15 +184,24 @@
 }
 
 
-.nav-tabs > li > a:hover{
-    background-color: white !important;
-    border: medium none;
-    border-radius: 0;
-    color: black;
-}
+/*.nav-tabs > li > a:hover{*/
+/*    background-color: white !important;*/
+/*    border: medium none;*/
+/*    border-radius: 0;*/
+/*    color: black;*/
+/*}*/
 
 
 .list-group .list-group-item:hover {
     background-color: darkgrey;
 }
 
+.wd-relative-to-profilePic{
+    position: relative;
+    left: 40px;
+    bottom: 40px;
+}
+
+.wd-border-disappear{
+    border-color: black;
+ }

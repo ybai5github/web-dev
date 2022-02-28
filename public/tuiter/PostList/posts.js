@@ -1,0 +1,5 @@
+export default [
+    {like: '37.5k',retuit: '3.5k', comment: '4.2k', profilePic: '../starship.jpeg', userName:'Elon Musk', handle: '@elonmusk · 23h', title:'Amazing show about <a style="text-decoration: none" href="#">@Inspiration4x</a> mission!', image:'../inspiration4.jpeg', cardTitle: 'Countdown: Inspiration4 Mission to Space | Netflix Official Site', cardText: 'From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space <i class="fas fa-link"></i>netflix.com'},
+    {like: '4k',retuit: '2.4k',comment: '965', profilePic: '../post.png', userName: 'New York Post', handle: '@nypost · 23h', title:'Grimes seen reading Karl Marx following split with world\'s richest man Elon Musk <a style="text-decoration: none" href="#">trib.al/nx2Gfaq</a>', image: '../grimes.jpeg',cardTitle: '', cardText: ''},
+
+];
