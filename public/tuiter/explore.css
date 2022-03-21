@@ -205,7 +205,3 @@
 .wd-border-disappear{
     border-color: black;
  }
-
-wd-ternary{
-    display: ${posts.cardTitle === '' ? 'none': 'block'};
-}
