@@ -1,0 +1,363 @@
+.wd-bookmark-position{
+    margin-left: 16px;
+    margin-top: 12px;
+}
+
+
+body{
+    background-color: black;
+}
+
+.wd-bm-to-left{
+    margin-left: 16px;
+}
+
+.wd-bg-color-black{
+    background-color: black;
+}
+
+.wd-border_color_black{
+    border-color: rgb(47, 51, 54);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.wd-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.wd-block-12 {
+    width: 12px;
+}
+
+.wd-block-100 {
+    width: 80px;
+}
+
+.wd-bookmark-font-size{
+    font-size: 20px;
+    font-weight: bold ;
+}
+
+.wd-heart-color{
+    color: red;
+}
+
+.wd-font-color{
+    color: rgb(110, 118, 125);
+}
+
+.wd-font-size-small{
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.wd-margin-to-top-12{
+    margin-top: 12px;
+}
+
+.wd-margin-to-bottom{
+    margin-bottom: 12px;
+}
+
+.wd-relative-position{
+    position: relative;
+    bottom: 15px;
+}
+
+.wd-relative-position-c{
+    position: relative;
+    left: 68px;
+    bottom: 64px;
+}
+
+.wd-relative-position-d{
+    position: relative;
+    left: 68px;
+    bottom: 60px;
+}
+
+.wd-relative-position-e{
+    position: relative;
+    left: 68px;
+    bottom: 60px;
+}
+
+.wd-relative-position-f{
+    position: relative;
+    left: 68px;
+}
+
+.wd-relative-position-g{
+    position: relative;
+    left: 68px;
+}
+
+
+
+.wd-rounded-top-corners{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.wd-rounded-bottom-corners{
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.wd-rounded-corners{
+    border-radius: 50px;
+}
+
+.wd-margin-12{
+    margin-left: 12px;
+}
+
+
+.wd-padding-12{
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.wd-padding-12-bottom{
+    padding-bottom: 12px;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.wd-font-15{
+    font-size: 15px;
+}
+
+.wd-width-of-content{
+    width: 506px;
+}
+
+.wd-negative-margin{
+    margin-bottom: -60px;
+}
+
+.wd-bg-color-darkgrey{
+    background-color: darkgray;
+}
+
+.wd-bg-color-black{
+    background-color: black;
+}
+
+.wd-border-color-grey{
+    border-color: rgb(110, 118, 125);
+    border-style: solid;
+    border-width: 0.001mm;
+}
+
+.wd-border_color_black{
+    border-color: rgb(47, 51, 54);
+    border-style: solid;
+}
+
+.wd-margin-bottom-negative{
+    margin-bottom: -4px;
+}
+
+.wd-margin-to-left{
+    margin-left: 16px;
+}
+
+.wd-margin-to-right{
+    margin-right: 12px;
+}
+
+.wd-rounded-corners{
+    border-radius: 50px;
+}
+
+.wd-rounded-corners-small{
+    border-radius: 25px;
+}
+
+.wd-padding-all-around{
+    padding: 16px 0px;
+    margin:0px 16px;
+}
+
+
+.wd-add-bottom-blue-border{
+    border-bottom-width: 5px;
+    border-bottom-color: rgb(29, 161, 242);
+    border-bottom-style: solid;
+}
+
+.wd-font-size{
+    font-size:13px;
+    color: rgb(110, 118, 125);
+}
+
+
+.wd-pos-relative-top {
+    position: relative;
+    top: 20px;
+}
+
+
+.wd-pos-relative_bottom {
+    position: relative;
+    bottom: 20px;
+}
+
+.wd-font-thin{
+    font-weight: 100;
+}
+
+.wd-relative-to-up-right{
+    position: relative;
+    right: 16px;
+    bottom: 100px;
+}
+
+.wd-rounded-corners2{
+    border-radius: 25px;
+}
+
+.wd-relative-small{
+    position: relative;
+    top: 4px;
+    right: 4px;
+}
+
+.wd-relative-small2{
+    position: relative;
+    top: 1px;
+    right: 4px;
+}
+
+.wd-margin-to-left-small{
+    margin-left: 4px;
+    margin-right: 2px;
+}
+
+.wd-searchbar-border{
+    border-radius: 50px;
+}
+
+.wd-bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.wd-inline-icon-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.wd-inline{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.wd-padding-input{
+    padding-left: 50px;
+}
+
+.wd-more-tab{
+    position: absolute;
+    width: 100%;
+}
+
+/*.wd-text-to-bottom{*/
+/*    background-image: url('/images/starship.jpeg');*/
+
+/*}*/
+
+.wd-padding-12{
+    padding-left: 12px;
+}
+
+.wd-bolded-font{
+    font-weight: bold;
+}
+
+.wd-tiny-font{
+    font-size: 15px;
+}
+
+.wd-vertical-align-button{
+    position: absolute;
+    right: .5em;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+/*.wd-challenge{*/
+/*    .bg-dark;*/
+/*    color: white;*/
+/*}*/
+
+.wd-input-in-dark-mode{
+    background-color: rgb(77, 82, 88);
+    border: none;
+}
+
+.wd-margin-to-top{
+    position: relative;
+    margin-top: 35%;
+}
+
+.wd-card-dark-mode{
+    background-color: #212529;
+    border: none;
+}
+
+.wd-override-btn{
+    background-color: #34b7f1;
+}
+
+.wd-override-btn-white{
+    background-color: white;
+    border: none;
+    color: black;
+}
+
+
+/*.nav-tabs > li > a:hover{*/
+/*    background-color: white !important;*/
+/*    border: medium none;*/
+/*    border-radius: 0;*/
+/*    color: black;*/
+/*}*/
+
+
+.list-group .list-group-item:hover {
+    background-color: darkgrey;
+}
+
+.wd-relative-to-profilePic{
+    position: relative;
+    left: 40px;
+    bottom: 40px;
+}
+
+.wd-border-disappear{
+    border-color: black;
+ }
+
+.wd-gearicon-color{
+    color: #2a9fd6;
+}
+
+.wd-font-grey{
+    color: darkgray;
+}
+
+.wd-postitem-style{
+    list-style: none;
+    color: white;
+}
+
