@@ -10,7 +10,7 @@ const WhoToFollowListItem = ({
         <div>
 
             <ul className="list-group list-group-flush">
-                <li className="wd-bg-color-black list-group-item my-auto">
+                <li className="list-group-item my-auto">
 
                     <button type="button" className="btn btn-primary wd-vertical-align-button wd-rounded-corners float-end">Follow</button>
                     <img className="wd-rounded-corners float-start" width="45" height="45" src={who.avatarIcon}/>

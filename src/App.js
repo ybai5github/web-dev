@@ -7,24 +7,39 @@ import HelloWorld from "./components/hello-world";
 import Labs from "./components/labs";
 import Tuiter from "./components/tuiter";
 import ExploreScreen from "./components/tuiter/ExploreScreen/ExploreScreen";
-import HomeScreen from "./components/tuiter/HomeScreen/HomeScreen";
+import HomeScreen from "./components/tuiter/home-screen";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import NavigationSidebar from "./components/tuiter/NavigationSidebar";
+import ExploreComponent from "./components/tuiter/ExploreScreen/ExploreComponent";
+import PostList from "./components/tuiter/PostList";
+import TuitList from "./components/tuiter/tuit-list/tuit-list";
 
 
 function App() {
-  return (
-      <BrowserRouter>
-          <div className="container">
-              <Routes>
-                  <Route path="/hello" exact={true} element={<HelloWorld/>}/>
-                  <Route path="/" exact={true} element={<Labs/>}/>
-                  <Route path="/tuiter" exact={true} element={<Tuiter/>}/>
-                  <Route path="/tuiter/explore" exact={true} element={<ExploreScreen/>}/>
-                  <Route path="/tuiter/home" exact={true} element={<HomeScreen/>}/>
-              </Routes>
-          </div>
-      </BrowserRouter>
-
-  );
+    return (
+        <BrowserRouter>
+            <div className="container">
+                <Routes>
+                    <Route path="/">
+                        <Route index element={<Labs />} />
+                        <Route path="labs" exact={true} element={<Labs />} />
+                        <Route path="hello"
+                               element={<HelloWorld/>}/>
+                        <Route path="tuiter"
+                               element={<Tuiter/>}>
+                            <Route path="home"
+                                   element={<HomeScreen/>}/>
+                            <Route path="explore"
+                                   element={<ExploreComponent/>}/>
+                            <Route path="navigation"
+                                   element={<NavigationSidebar/>}/>
+                            ...
+                        </Route>
+                    </Route>
+                </Routes>
+            </div>
+        </BrowserRouter>
+    );
 }
+
 export default App;

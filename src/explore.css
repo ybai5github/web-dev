@@ -361,3 +361,17 @@ body{
     color: white;
 }
 
+.wd-video-dimension{
+    height: 300px;
+}
+
+.wd-100-div{
+    width: 97%;
+}
+
+.wd-border-bottom{
+    border-bottom-color: grey;
+    border-top-color: black;
+    border-left-color: black;
+    border-right-color: black;
+}
