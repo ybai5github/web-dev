@@ -1,0 +1,20 @@
+
+[
+  {
+    "firstName":"Jose",
+    "lastName": "Annunziato",
+    "fullName": "Jose Annunziato",
+    "handle": "@jannunzi",
+    "tweet": "5196 Tweets",
+    "profilePicture": "/images/jose.jpeg",
+    "bannerPicture": "/images/polyglot.png",
+    "bio": "Faculty, Software Engineer, AI, Space, and renewable enthusiast. Retweets and likes are not endorsements.",
+    "website": "youtube.com/webdevtv",
+    "location": "Boston, MA",
+    "dob": "Born 7/7/1968",
+    "dateJoined": "Joined 4/2009",
+    "followingCount": 312,
+    "followersCount": 180
+  }
+]
+

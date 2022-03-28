@@ -5,11 +5,12 @@ import NavigationSidebar from "./NavigationSidebar";
 import WhoToFollowList from "./WhoToFollowList";
 import whoReducer from "./reducers/who-reducer";
 import {Provider} from "react-redux";
+import profileReducer from "./reducers/profile-reducer";
 
 
 
 const reducer = combineReducers({
-    tuits: tuitsReducer, who: whoReducer
+    tuits: tuitsReducer, who: whoReducer, profiles: profileReducer,
 });
 const store = createStore(reducer);
 

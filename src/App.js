@@ -13,6 +13,8 @@ import NavigationSidebar from "./components/tuiter/NavigationSidebar";
 import ExploreComponent from "./components/tuiter/ExploreScreen/ExploreComponent";
 import PostList from "./components/tuiter/PostList";
 import TuitList from "./components/tuiter/tuit-list/tuit-list";
+import ProfileScreen from "./components/tuiter/profile-screen/ProfileScreen";
+import EditProfileScreen from "./components/tuiter/profile-screen/EditProfileScreen";
 
 
 function App() {
@@ -33,6 +35,10 @@ function App() {
                                    element={<ExploreComponent/>}/>
                             <Route path="navigation"
                                    element={<NavigationSidebar/>}/>
+                            <Route path="profile"
+                                   element={<ProfileScreen/>}/>
+                            <Route path="editProfile"
+                                   element={<EditProfileScreen/>}/>
                             ...
                         </Route>
                     </Route>

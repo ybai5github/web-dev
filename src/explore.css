@@ -375,3 +375,64 @@ body{
     border-left-color: black;
     border-right-color: black;
 }
+
+.wd-font-white{
+    color: white;
+}
+
+.wd-relative-position-profile{
+    position: relative;
+    bottom: 50px;
+    left: 8px;
+}
+
+.wd-relative-profile-name{
+    position: relative;
+    bottom: 45px;
+    left: 8px;
+}
+
+.wd-relative-profile-handle{
+    position: relative;
+    bottom: 50px;
+    left: 8px;
+}
+
+.wd-profile-name-style{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.wd-image-border{
+    border: 4px solid black;
+}
+
+.wd-relative-profile-bio{
+    position: relative;
+    bottom: 40px;
+    left: 8px;
+}
+
+.wd-relative-profile-icons{
+    position: relative;
+    bottom: 40px;
+    left: 8px;
+}
+
+.ed-font-black{
+    color: black;
+}
+
+.wd-textarea-width{
+    display: block;
+    width: 100%;
+}
+
+.wd-button-center{
+    vertical-align: middle;
+}
+
+.wd-content-goes-up{
+    position: relative;
+    bottom: 30px;
+}
