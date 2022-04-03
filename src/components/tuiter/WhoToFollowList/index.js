@@ -11,7 +11,7 @@ const WhoToFollowList = () => {
             <ul className="list-group wd-bolded-font">
                 {
                     who.map(who =>{
-                        return(<WhoToFollowListItem who={who}/>);
+                        return(<WhoToFollowListItem who={who} key={who.username}/>);
                     })
                 }
             </ul>

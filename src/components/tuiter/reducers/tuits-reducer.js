@@ -1,22 +1,81 @@
-import tuits from "../data/tuits.json";
+import {UPDATE_TUIT, CREATE_TUIT, DELETE_TUIT, FIND_ALL_TUITS} from "../actions/tuits-action";
 
-const tuitsReducer = (state = tuits, action) => {
+
+const tuitsReducer = (state = [], action) => {
         switch (action.type) {
-            case 'like-tuit':
+            case 'thumb-up-tuit':
                 return state.map(tuit => {
                     if(tuit._id === action.tuit._id) {
                         if(tuit.liked === true) {
                             tuit.liked = false;
-                            tuit.stats.likes--;
+                            tuit.likes--;
                         } else {
+                            if(tuit.disliked === true){
+                                tuit.disliked = false;
+                                tuit.dislikes--;
+                            }
                             tuit.liked = true;
-                            tuit.stats.likes++;
+                            tuit.likes++;
                         }
                         return tuit;
                     } else {
                         return tuit;
                     }
                 });
+
+            case 'thumb-down-tuit':
+                return state.map(tuit => {
+                    if(tuit._id === action.tuit._id) {
+                        if(tuit.disliked === true){
+                            tuit.disliked = false;
+                            tuit.dislikes--;
+                        } else{
+                            if(tuit.liked === true){
+                                tuit.liked = false;
+                                tuit.likes--;
+                            }
+                            tuit.disliked = true;
+                            tuit.dislikes++;
+                        }
+                        return tuit;
+                    } else {
+                        return tuit;
+                    }
+                });
+
+
+            case UPDATE_TUIT:
+                return state.map(
+                    tuit => tuit._id === action.tuit._id ?
+                        action.tuit : tuit);
+
+            case CREATE_TUIT:
+                return [
+                    ...state,
+                    action.newTuit];
+
+            case FIND_ALL_TUITS:
+                return action.tuits;
+
+            case DELETE_TUIT:
+                return state.filter(
+                    tuit => tuit._id !== action.tuit._id);
+
+            // case 'like-tuit':
+            //     return state.map(tuit => {
+            //         if(tuit._id === action.tuit._id) {
+            //             if(tuit.liked === true) {
+            //                 tuit.liked = false;
+            //                 tuit.stats.likes--;
+            //             } else {
+            //                 tuit.liked = true;
+            //                 tuit.stats.likes++;
+            //             }
+            //             return tuit;
+            //         } else {
+            //             return tuit;
+            //         }
+            //     });
 
             case 'delete-tuit':
                 return state.filter(tuit => tuit._id !== action.tuit._id);
@@ -39,7 +98,7 @@ const tuitsReducer = (state = tuits, action) => {
                     ...state,
                 ];
             default:
-                return tuits
+                return state;
         }
     }
 

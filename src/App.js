@@ -24,12 +24,12 @@ function App() {
                 <Routes>
                     <Route path="/">
                         <Route index element={<Labs />} />
-                        <Route path="labs" exact={true} element={<Labs />} />
+                        <Route path="labs" exact={true} element={<Labs/>} />
                         <Route path="hello"
                                element={<HelloWorld/>}/>
                         <Route path="tuiter"
                                element={<Tuiter/>}>
-                            <Route path="home"
+                            <Route index
                                    element={<HomeScreen/>}/>
                             <Route path="explore"
                                    element={<ExploreComponent/>}/>
@@ -39,7 +39,6 @@ function App() {
                                    element={<ProfileScreen/>}/>
                             <Route path="editProfile"
                                    element={<EditProfileScreen/>}/>
-                            ...
                         </Route>
                     </Route>
                 </Routes>

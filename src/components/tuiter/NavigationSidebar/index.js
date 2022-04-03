@@ -13,7 +13,7 @@ const NavigationSidebar = ( {
                 </Link>
 
 
-                <Link to="/tuiter/home" className={`list-group-item list-group-item-action ${active === 'Home' ? 'active' : ""}`}>
+                <Link to="/tuiter" className={`list-group-item list-group-item-action ${active === 'Home' ? 'active' : ""}`}>
                     <i className="fa-solid fa-house-chimney-user"></i>
                     <span className="ms-2 d-none d-xl-inline-block">Home</span>
                 </Link>

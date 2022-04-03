@@ -1,26 +1,22 @@
 import {useDispatch} from "react-redux";
 import TuitStats from "./tuit-stats";
-
+import {deleteTuit} from "../actions/tuits-action"
 
     const TuitListItem = ({tuit}) =>{
         const dispatch = useDispatch();
-        const deleteTuit = (tuit) => {
-            dispatch({type: 'delete-tuit', tuit})
-        };
-        // const likeTuit = () => {
-        //     dispatch({type: 'like-tuit', tuit});
-        // };
 
 
         return(
+
             <div className="row">
+
                 <div className="col-1">
                     <img className="wd-rounded-corners" height="50" width="50" src={tuit.image}/>
                 </div>
 
                 <div className="col-11">
-                    <i onClick={() => deleteTuit(tuit)}
-                       className="fas fa-remove fa-2x fa-pull-right"></i>
+                    <i className="fas fa-remove float-end"
+                       onClick={() => deleteTuit(dispatch, tuit)}></i>
 
                     <li className="wd-postitem-style ms-3 wd-border-disappear">
                         <span className="wd-bolded-font">{tuit.postedBy.username}</span>
