@@ -12,7 +12,6 @@ const TuitStats = ({tuit}) =>{
     };
 
     return(
-
         <div className="pt-3 ms-2 row wd-inline-icon-text">
 
             <div className="col-3">
@@ -25,7 +24,6 @@ const TuitStats = ({tuit}) =>{
                 {
                     !tuit.liked && <i onClick={likeTuit} className="far fa-thumbs-up"></i>
                 }
-
             </div>
 
 
