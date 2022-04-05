@@ -3,47 +3,6 @@ import {UPDATE_TUIT, CREATE_TUIT, DELETE_TUIT, FIND_ALL_TUITS} from "../actions/
 
 const tuitsReducer = (state = [], action) => {
         switch (action.type) {
-            case 'thumb-up-tuit':
-                return state.map(tuit => {
-                    if(tuit._id === action.tuit._id) {
-                        if(tuit.liked === true) {
-                            tuit.liked = false;
-                            tuit.likes--;
-                        } else {
-                            if(tuit.disliked === true){
-                                tuit.disliked = false;
-                                tuit.dislikes--;
-                            }
-                            tuit.liked = true;
-                            tuit.likes++;
-                        }
-                        return tuit;
-                    } else {
-                        return tuit;
-                    }
-                });
-
-            case 'thumb-down-tuit':
-                return state.map(tuit => {
-                    if(tuit._id === action.tuit._id) {
-                        if(tuit.disliked === true){
-                            tuit.disliked = false;
-                            tuit.dislikes--;
-                        } else{
-                            if(tuit.liked === true){
-                                tuit.liked = false;
-                                tuit.likes--;
-                            }
-                            tuit.disliked = true;
-                            tuit.dislikes++;
-                        }
-                        return tuit;
-                    } else {
-                        return tuit;
-                    }
-                });
-
-
             case UPDATE_TUIT:
                 return state.map(
                     tuit => tuit._id === action.tuit._id ?
