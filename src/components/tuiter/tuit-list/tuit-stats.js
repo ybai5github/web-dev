@@ -1,14 +1,32 @@
 import {useDispatch} from "react-redux";
 import {updateTuit} from "../actions/tuits-action";
+import {UPDATE_TUIT} from "../actions/tuits-action";
 
 const TuitStats = ({tuit}) =>{
     const dispatch = useDispatch();
 
-    const likeTuit = () => {
-        updateTuit(dispatch, tuit, 'thumb-up-tuit');
+    const likeTuit = (tuit) => {
+        if(!tuit.liked && !tuit.disliked){
+            tuit.likes++;
+            tuit.liked = true;
+        }
+        else if(tuit.liked && !tuit.disliked){
+            tuit.likes--;
+            tuit.liked = false;
+        }
+        return updateTuit(dispatch, tuit, UPDATE_TUIT);
     };
-    const dislikeTuit = () => {
-        updateTuit(dispatch, tuit, 'thumb-down-tuit');
+
+    const dislikeTuit = (tuit) => {
+        if(!tuit.disliked && !tuit.liked){
+            tuit.dislikes++;
+            tuit.disliked = true;
+        }
+        else if(tuit.disliked && !tuit.liked){
+            tuit.dislikes--;
+            tuit.disliked = false;
+        }
+        return updateTuit(dispatch, tuit, UPDATE_TUIT);
     };
 
     return(
@@ -19,10 +37,12 @@ const TuitStats = ({tuit}) =>{
             </div>
             <div className="col-3">
                 {
-                    tuit.liked && <i onClick={likeTuit} className="far fa-thumbs-up" style={{color: 'red'}}></i>
+                    tuit.liked && <i onClick={() => {return likeTuit(tuit)}}
+                                     className="far fa-thumbs-up" style={{color: 'red'}}></i>
                 }
                 {
-                    !tuit.liked && <i onClick={likeTuit} className="far fa-thumbs-up"></i>
+                    !tuit.liked && <i onClick={() => {return likeTuit(tuit)}}
+                                      className="far fa-thumbs-up"></i>
                 }
             </div>
 
@@ -32,10 +52,12 @@ const TuitStats = ({tuit}) =>{
             </div>
             <div className="col-3">
                 {
-                    tuit.disliked && <i onClick={dislikeTuit} className="far fa-thumbs-down"style={{color: 'red'}}></i>
+                    tuit.disliked && <i onClick={() => {return dislikeTuit(tuit)}}
+                                        className="far fa-thumbs-down"style={{color: 'red'}}></i>
                 }
                 {
-                    !tuit.disliked && <i onClick={dislikeTuit} className="far fa-thumbs-down"></i>
+                    !tuit.disliked && <i onClick={() => {return dislikeTuit(tuit)}}
+                                         className="far fa-thumbs-down"></i>
                 }
             </div>
 
