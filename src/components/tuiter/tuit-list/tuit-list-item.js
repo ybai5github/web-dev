@@ -41,54 +41,13 @@ import {deleteTuit} from "../actions/tuits-action"
                                 }
                             </div>
 
-                            {/*<div className="card-body ps-3 pe-3 pb-3 wd-bg-color-black wd-rounded-corners-small">*/}
-                            {/*    <h6>{tuit.tuit}</h6>*/}
-                            {/*    <div className="wd-font-grey">{tuit.tuit}</div>*/}
-                            {/*</div>*/}
+
                         </div>
 
                     </li>
 
                     <TuitStats tuit={tuit}/>
-                    {/*<div className="pt-3 ms-2 row wd-inline-icon-text">*/}
 
-                    {/*    <div className="col-3">*/}
-                    {/*        <i className="wd-font-color fa-regular fa-comment"></i>*/}
-                    {/*        <text className="wd-block-100 wd-font-color" >{tuit.stats.comments}</text>*/}
-                    {/*    </div>*/}
-
-
-                    {/*    <div className="col-3">*/}
-                    {/*        <i className="wd-font-color fa-solid fa-retweet"></i>*/}
-                    {/*        <text className="wd-block-100 wd-font-color">{tuit.stats.retuits}</text>*/}
-                    {/*    </div>*/}
-
-
-                    {/*    /!*<i className="wd-margin-12  wd-font-color fa-regular fa-heart"></i>*!/*/}
-                    {/*    /!*<text className="wd-block-100 wd-font-color">{tuit.stats.likes}</text>*!/*/}
-
-
-                    {/*    <div className="col-3" onClick={likeTuit}>*/}
-                    {/*        {*/}
-                    {/*            tuit.liked &&*/}
-                    {/*            <i className="fas fa-heart me-1"*/}
-                    {/*               style={{color: 'red'}}></i>*/}
-                    {/*        }*/}
-                    {/*        {*/}
-                    {/*            !tuit.liked &&*/}
-                    {/*            <i className="far fa-heart me-1"></i>*/}
-                    {/*        }*/}
-                    {/*        {tuit.stats && tuit.stats.likes}*/}
-                    {/*    </div>*/}
-
-                    {/*    <div className="col-3">*/}
-                    {/*        <i className="wd-font-color fa-solid fa-arrow-up-from-bracket"></i>*/}
-                    {/*        <text className="wd-block-100 wd-font-color"></text>*/}
-
-                    {/*    </div>*/}
-
-
-                    {/*</div>*/}
                     <hr/>
 
 
